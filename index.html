@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samet Karakaya - ElektronikTeknolojisi 2. Sınıf Öğrencisi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Samet</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Anasayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Hakkımda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link">Özgeçmiş</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#project" class="nav-link">Proje</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">İletişim</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h3>Merhaba,</h3>
+                    <h1>Ben <span class="highlight">Samet</span></h1>
+                    <h2>ElektronikTeknolojisi<br>2. Sınıf Öğrencisi</h2>
+                    <p>Elektronik ve web teknolojileri konusunda tutkulu bir geliştirici. Modern teknolojilerle yaratıcı çözümler üretiyorum.</p>
+                    <div class="home-buttons">
+                        <button class="contact-btn" onclick="scrollToSection('contact')">
+                            <i class="fas fa-envelope"></i>
+                            İletişim
+                        </button>
+                        <button class="project-btn" onclick="scrollToSection('project')">
+                            <i class="fas fa-eye"></i>
+                            Projeyi İncele
+                        </button>
+                        <a href="Sunu2.pptx" download="SUM_Akilli_Besik_Modulu_Sunumu.pptx" class="presentation-btn">
+                            <i class="fas fa-download"></i>
+                            Sunuyu İndir
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/samet-karakaya-549b35326/" target="_blank" aria-label="LinkedIn Profili">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/1sametkarakaya" target="_blank" aria-label="GitHub Profili">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <div class="image-container">
+                        <img src="profile.jpeg" alt="Samet Karakaya Profil Fotoğrafı">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hakkımda</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Ben Samet Karakaya. 24 Kasım 2004 tarihinde Suşehri'nde doğdum. Eğitim hayatıma Zeynebbedia İlkokulu'nda başladım. Ardından Mahir İz Ortaokulu'nda eğitimime devam ettim. Lise öğrenimimi Akşemsettin Anadolu İmam Hatip Lisesi'nde tamamladım.</p>
+                    
+                    <p>Şu anda Haliç Üniversitesi Elektronik Teknolojisi bölümünde son sınıf öğrencisiyim ve 1 Haziran 2025'te mezun olmayı planlıyorum.</p>
+                    
+                    <p>Elektronikle ilgim lise yıllarında başladı. Bu alandaki merakım beni birçok projeye ve teknik eğitime yönlendirdi. Esenyurt Üniversitesi'nde Elektrik/Elektronik Ağır Bakım alanında aldığım kurs sayesinde hem teorik hem de pratik becerilerimi geliştirme fırsatı buldum.</p>
+                    
+                    <p>Ayrıca, Erpa Teknoloji'de staj yaparak üretim, bakım-onarım ve arıza tespiti konularında deneyim kazandım.</p>
+                    
+                    <div class="interests">
+                        <h3>İlgi Alanlarım</h3>
+                        <div class="interest-tags">
+                            <span class="tag">Elektronik Projeler</span>
+                            <span class="tag">Futbol (Beşiktaş)</span>
+                            <span class="tag">Tarih Kitapları</span>
+                            <span class="tag">Teknoloji ve Yazılım</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Özgeçmiş</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="resume-content">
+                <div class="resume-grid">
+                    <!-- Contact Info -->
+                    <div class="resume-card">
+                        <h3><i class="fas fa-address-card"></i> İletişim Bilgileri</h3>
+                        <div class="contact-info">
+                            <p><i class="fas fa-phone"></i> 0537 503 34 58</p>
+                            <p><i class="fas fa-envelope"></i> samet_34karakaya@hotmail.com</p>
+                            <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                            <p><i class="fas fa-calendar"></i> 24.11.2004</p>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="resume-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Eğitim Durumu</h3>
+                        <div class="education-item">
+                            <h4>Haliç Üniversitesi</h4>
+                            <p>Elektronik Teknolojisi (Ön Lisans)</p>
+                            <span class="date">2022 - 2025</span>
+                        </div>
+                        <div class="education-item">
+                            <h4>Akşemsettin Anadolu İmam Hatip Lisesi</h4>
+                        </div>
+                        <div class="education-item">
+                            <h4>Mahir İz Ortaokulu</h4>
+                        </div>
+                        <div class="education-item">
+                            <h4>Zeynebbedia İlkokulu</h4>
+                        </div>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="resume-card">
+                        <h3><i class="fas fa-briefcase"></i> İş Deneyimi</h3>
+                        <div class="experience-item">
+                            <h4>Erpa Teknoloji</h4>
+                            <p>Elektronik Teknikeri (Stajyer)</p>
+                            <span class="date">1.5 Ay</span>
+                            <ul>
+                                <li>Üretim hattında elektronik devre montajı</li>
+                                <li>Bakım ve onarım işlemleri</li>
+                                <li>Arıza tespiti ve giderimi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Technical Skills -->
+                    <div class="resume-card">
+                        <h3><i class="fas fa-code"></i> Teknik Yetenekler</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <span>Proteus</span>
+                            </div>
+                            <div class="skill-item">
+                                <span>Arduino IDE</span>
+                            </div>
+                            <div class="skill-item">
+                                <span>C/C++</span>
+                            </div>
+                            <div class="skill-item">
+                                <span>Mikrodenetleyiciler</span>
+                            </div>
+                            <div class="skill-item">
+                                <span>Lehimleme</span>
+                            </div>
+                            <div class="skill-item">
+                                <span>Ölçüm Cihazları</span>
+                            </div>
+                            <div class="skill-item">
+                                <span>Devre Tasarımı</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="resume-card">
+                        <h3><i class="fas fa-language"></i> Dil Yeterliliği</h3>
+                        <div class="language-item">
+                            <span>Türkçe</span>
+                            <div class="level">Ana Dil</div>
+                        </div>
+                        <div class="language-item">
+                            <span>İngilizce</span>
+                            <div class="level">Orta Seviye</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="project" class="project-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Bitirme Projesi</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="project-content">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-baby-carriage"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>SÜM Akıllı Beşik Modülü</h3>
+                        <p>Bu projede, bebeklerin konforunu artırmak amacıyla akıllı bir beşik modülü geliştirdim. Sistem, bebek ağladığında otomatik olarak devreye girip, beşiği sallayan bir mekanizmaya sahip.</p>
+                        
+                        <div class="project-features">
+                            <h4>Proje Özellikleri:</h4>
+                            <ul>
+                                <li>Arduino mikrodenetleyici ile akıllı kontrol</li>
+                                <li>Mikrofon sensörü ile hassas ses algılama</li>
+                                <li>Servo motor ile otomatik ve yumuşak sallanma</li>
+                                <li>Önceden kaydedilmiş yatıştırıcı sesler</li>
+                                <li>Otomatik aktivasyon ve güvenlik sistemi</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-presentation">
+                            <h4>Proje Sunumu:</h4>
+                            <p>Projenin detaylı açıklaması, tasarım süreci ve sonuçları hakkında kapsamlı bilgi için sunumumuzu inceleyebilirsiniz.</p>
+                            <a href="Sunu2.pptx" download="SUM_Akilli_Besik_Modulu_Sunumu.pptx" class="download-btn">
+                                <i class="fas fa-download"></i>
+                                Sunuyu İndir (PowerPoint)
+                            </a>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <h4>Kullanılan Teknolojiler:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Arduino</span>
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Servo Motor</span>
+                                <span class="tech-tag">Mikrofon Sensörü</span>
+                                <span class="tech-tag">Ses Modülü</span>
+                            </div>
+                        </div>
+                        
+                        <p class="project-result">Proje, bebek ağlama sesini mikrofon sensörü ile algılayarak önceden kaydedilmiş yatıştırıcı sesleri çalmakta ve beşiği yumuşak bir şekilde sallamaktadır. Bu sayede bebeklerin daha rahat ve huzurlu uyuması hedeflenmektedir.</p>
+                        
+                        <!-- Project Gallery -->
+                        <div class="project-gallery">
+                            <h4>Proje Görselleri</h4>
+                            <p class="gallery-description">Projenin geliştirilme süreci ve kullanılan araçlar</p>
+                            
+                            <div class="carousel-container">
+                                <div class="carousel-wrapper">
+                                    <div class="carousel-track" id="carouselTrack">
+                                        <div class="carousel-slide">
+                                            <img src="tool1.jpeg" alt="Mikrofon Sensörü" loading="lazy">
+                                            <div class="slide-caption">Mikrofon Sensörü</div>
+                                        </div>
+                                        <div class="carousel-slide">
+                                            <img src="tool2.jpeg" alt="Devre Şeması" loading="lazy">
+                                            <div class="slide-caption">Devre Şeması</div>
+                                        </div>
+                                        <div class="carousel-slide">
+                                            <img src="tool3.jpeg" alt="MG995 Servo Motor" loading="lazy">
+                                            <div class="slide-caption">MG995 Servo Motor</div>
+                                        </div>
+                                        <div class="carousel-slide">
+                                            <img src="tool4.jpeg" alt="Bağlantısı yapılmış devrenin son hali" loading="lazy">
+                                            <div class="slide-caption">Bağlantısı yapılmış devrenin son hali</div>
+                                        </div>
+                                        <div class="carousel-slide">
+                                            <img src="tool5.jpeg" alt="Ahşap kasa materyali yapım süreci marangoz" loading="lazy">
+                                            <div class="slide-caption">Ahşap kasa materyali yapım süreci marangoz</div>
+                                        </div>
+                                        <div class="carousel-slide">
+                                            <img src="tool6.jpeg" alt="Df player MP3 Müzik Çalar (ninni sesi için)" loading="lazy">
+                                            <div class="slide-caption">Df player MP3 Müzik Çalar (ninni sesi için)</div>
+                                        </div>
+                                        <div class="carousel-slide">
+                                            <img src="tool7.jpeg" alt="Ahşap kasa materyali yapım aşaması marangoz" loading="lazy">
+                                            <div class="slide-caption">Ahşap kasa materyali yapım aşaması marangoz</div>
+                                        </div>
+                                        <div class="carousel-slide">
+                                            <img src="tool8.jpeg" alt="Proje Görseli" loading="lazy">
+                                        </div>
+                                        <div class="carousel-slide">
+                                            <img src="tool9.jpeg" alt="Proje Görseli" loading="lazy">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button class="carousel-btn carousel-prev" id="prevBtn">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-btn carousel-next" id="nextBtn">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                                
+                                <div class="carousel-indicators" id="carouselIndicators">
+                                    <span class="indicator active" data-slide="0"></span>
+                                    <span class="indicator" data-slide="1"></span>
+                                    <span class="indicator" data-slide="2"></span>
+                                    <span class="indicator" data-slide="3"></span>
+                                    <span class="indicator" data-slide="4"></span>
+                                    <span class="indicator" data-slide="5"></span>
+                                    <span class="indicator" data-slide="6"></span>
+                                    <span class="indicator" data-slide="7"></span>
+                                    <span class="indicator" data-slide="8"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>İletişim</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info-grid">
+                    <div class="contact-info-text">
+                        <h3>Benimle İletişime Geçin</h3>
+                        <p>Projeleriniz, iş fırsatları veya herhangi bir konuda benimle iletişime geçmekten çekinmeyin. Aşağıdaki kanallardan bana ulaşabilirsiniz.</p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>E-posta</h4>
+                                <a href="mailto:samet_34karakaya@hotmail.com">samet_34karakaya@hotmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefon</h4>
+                                <a href="tel:+905375033458">0537 503 34 58</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Konum</h4>
+                                <p>İstanbul, Türkiye</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media-section">
+                        <h3>Sosyal Medya</h3>
+                        <div class="social-links-contact">
+                            <a href="https://www.linkedin.com/in/samet-karakaya-549b35326/" target="_blank" aria-label="LinkedIn Profili">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/1sametkarakaya" target="_blank" aria-label="GitHub Profili">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Samet Karakaya. Tüm hakları saklıdır.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/samet-karakaya-549b35326/" target="_blank" aria-label="LinkedIn Profili">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/1sametkarakaya" target="_blank" aria-label="GitHub Profili">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
